@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin login</title>
+</head>
+<body style="background:skyblue">
+     <h1>${msg}</h1>
+	<h3>Enter your details.</h3>
+	<form action="/adminlogin1" method=post>
+		<div>
+			Account Number: <input type="text" name="cid">
+		
+		</div>
+		<br>
+		<div>
+			Password:<input type="password" name="pass">
+		</div>
+		<br>
+		<input type="submit">
+		
+	
+	
+	</form>
+	
+
+	<h3>Don't have a account?</h3>
+	<form action="adminregister.jsp">
+		<input value="register" type="submit">
+	</form>
+    
+</body>
+</html>
